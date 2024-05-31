@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up / Student Representative Council</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('graduates.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .container {
+            width: 50%;
+            margin: 100px auto;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for readability */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Richfield Logo" style="max-width: 100%; height: auto;">
+        <h2>Sign-Up / Student Representative Council</h2>
+        <form action="login.html" method="post">
+            <label for="fullname">Full Name</label>
+            <input type="text" name="fullname" id="fullname" placeholder="Full Name" required>
+            <label for="studentid">Student ID</label>
+            <input type="text" name="studentid" id="studentid" placeholder="Student ID" required>
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="Email Address" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" required>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+    <script>
+        var password = document.getElementById("password");
+        var confirm_password = document.getElementById("confirm_password");
+
+        function validatePassword(){
+            if(password.value !== confirm_password.value) {
+                confirm_password.setCustomValidity("Passwords Don't Match");
+            } else {
+                confirm_password.setCustomValidity('');
+            }
+        }
+
+        password.onchange = validatePassword;
+        confirm_password.onkeyup = validatePassword;
+    </script>
+</body>
+</html>
+

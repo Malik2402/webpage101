@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="https://www.richfield.ac.za/">Home Page</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Documents & Policies</a>
+                <div class="dropdown-content">
+                    <a href="minutes.html">Minutes</a>
+                    <a href="reports.html">Reports</a>
+                    <a href="policies.html">Policies and Constitutions</a>
+                </div>
+            </li>
+            <li><a href="portfolios.html">Portfolios</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <img src="logo.png" alt="Richfield Logo" class="logo">
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+            <a href="forgot-password.html" class="forgot-password">Forgot Password?</a>
+        </form>
+        <p id="error-message"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

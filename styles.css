@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+    margin: 0;
+    text-align: left;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover, .dropdown:hover .dropbtn {
+    background-color: #111;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.logo {
+    display: block;
+    margin: 20px auto;
+    width: 500px;
+}
+.login-container {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+form .form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #555;
+}
+.forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+#error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
